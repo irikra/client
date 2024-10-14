@@ -3,6 +3,9 @@ import threading
 import time
 import sys
 
+#FOR EDITING UR PORT LOOK TO PRE-LAST BLOCK
+#for change ip+port on client look to client #file
+
 def wait_for_connection(s):
     while True:
         try:
@@ -36,6 +39,8 @@ def sending_comands_receiving_outs(conn):
 if __name__ == "__main__":
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+#for change port, edit this on ur port 
+#                      ||||
     s.bind(('0.0.0.0', 1212))
     s.listen(5)
 
