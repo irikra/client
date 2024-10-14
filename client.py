@@ -5,10 +5,14 @@ import time
 import pyautogui as pg
 import random as rn
 
+#for change ip+port look down
+
 def connect_to_server():
     while True:
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+#.                      LOOK HERE
+#.                change this  ip and this port #to same is server.py.  |||||||||||||  ||||
             s.connect(('91.245.44.46', 1212))
             return s 
         except Exception as e:
