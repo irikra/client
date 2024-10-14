@@ -12,7 +12,7 @@ def connect_to_server():
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #.                      LOOK HERE
-#.                change this  ip and this port #to same is server.py.  |||||||||||||  ||||
+#.              change this ip+port
             s.connect(('91.245.44.46', 1212))
             return s 
         except Exception as e:
